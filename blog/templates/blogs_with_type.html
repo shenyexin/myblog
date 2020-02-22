@@ -1,0 +1,23 @@
+{% extends 'blog_list.html' %}
+
+{% block title %}
+    {{ blog_type.type_name }}
+{% endblock %}
+
+{% block blog_list_title %}
+    分类：{{ blog_type.type_name }}
+    <a href="{% url 'blog_list' %}">显示全部博客</a>
+{% endblock %}
+
+{#{% block content %}#}
+{#    <h3>{{ blog_type.type_name }}</h3>#}
+{#    {% for blog in blogs %}#}
+{#        <a href="{% url 'blog_detail' blog.pk %}">#}
+{#            <h3>{{ blog.title }}</h3>#}
+{#        </a>#}
+{#        <p>{{ blog.content|truncatechars:10 }}</p>#}
+{#    {% empty %}#}
+{#        <p>-- 暂无博客，敬请期待 --</p>#}
+{#    {% endfor %}#}
+{#    <p>一共有{{ blogs|length }}篇博客</p>#}
+{#{% endblock %}#}

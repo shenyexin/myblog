@@ -1,0 +1,21 @@
+h3.home-content {
+    font-size: 200%;
+    text-align: center;
+    margin-top: 7em;
+    margin-bottom: 5em;
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+}
+div#container{
+    margin: 0 auto;
+    height: 25em;
+    min-width: 30em;
+    max-width: 40em;
+}
+
+div.hot-data{
+    text-align: center;
+    margin-top: 3em;
+}
